@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-charcoal: #0F0F10;
+  --color-soft-gray: #1C1C1E;
+  --color-lavender: #9D7BFF;
+  --color-lavender-dark: #7C5CFF;
+  
+  --color-priority-high: #FF5F5F;
+  --color-priority-medium: #FFBD5F;
+  --color-priority-low: #5FFF9D;
+}
+
+@layer base {
+  body {
+    @apply bg-charcoal text-gray-200 font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-soft-gray/50 border border-white/5 backdrop-blur-md;
+}
+
+.task-card-hover {
+  @apply transition-all duration-300 hover:border-lavender/30 hover:bg-soft-gray/80;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-charcoal;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20;
+}
