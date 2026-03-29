@@ -36,5 +36,3 @@ A modern, responsive To-Do List web application built using React, TypeScript, a
 - Cloud synchronization with Firebase.
 - Collaborative shared lists.
 
-## Author
-Nikki
