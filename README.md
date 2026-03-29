@@ -1,4 +1,4 @@
-# Lumina Task Studio
+# TaskFlow
 
 ## Overview
 A modern, responsive To-Do List web application built using React, TypeScript, and Tailwind CSS. This project demonstrates core frontend development concepts including state management, DOM manipulation, and local storage persistence with a refined SaaS-like aesthetic.
